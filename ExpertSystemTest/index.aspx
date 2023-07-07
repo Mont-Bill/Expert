@@ -7,20 +7,30 @@
     <link href="StyleSheet1.css" rel="stylesheet" />
     <asp:ListView ID="ListView1" runat="Server">
         <ItemTemplate>
-            <div class="content">
-            <div class="List">
-                <table>
-                   
-                    <tr><td><img src="<%#Eval("Img_url") %>" class="center" ></td></tr>
-                    <tr><td><h1><%# Eval("name") %></h1></td></tr>
-                    <tr><td><p><%# Eval("College") %></p></td></tr>
-                    <tr><td><p><strong>Department :</strong><br/><%# Eval("Dept") %></p></td></tr>
-                    <tr><td><p><strong>Specialization :</strong><br/><%# Eval("Specialization") %></p></td></tr>
+
+           <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 program-block" data-program="" data-degrees="" data-interests="" data-keywords="" data-unique-id="">
                         
-                </table>
-            </div>
-            </div>
+                            <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                            <div><img src="<%#Eval("Img_url") %>" alt="Photo of "<%# Eval("name") %>></div>
+                            <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                            <div class="program-name">
+                                <div class="program-title"><%# Eval("name") %></div>
+                                <a href= "<%#Eval("FS_URL")%>">profile</a><br />
+
+                                <a href="mailto:engagement@msubillings.edu, janedoe@fakeemail.com?subject=Would like to know more about expert <%# Eval("name") %>">inquire about this expert</a>
+
+
+                                <div class="program-sub-description"><%# Eval("College") %></div>
+                                    <p><strong>Department:</strong><br/><%# Eval("Dept") %></p>
+                                    <p class="specialization"><strong>Specialization:</strong><br/><%# Eval("Specialization") %></p>
+                            </div>
+                        
+                    </div>
+            
+                        
+       
         </ItemTemplate>
     </asp:ListView>
 </asp:Content>
+
 

@@ -19,7 +19,7 @@ namespace ExpertSystemTest {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        public global::System.Web.UI.WebControls.ContentPlaceHolder head;
         
         /// <summary>
         /// form1 control.
@@ -28,7 +28,7 @@ namespace ExpertSystemTest {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        public global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
         /// ContentPlaceHolder1 control.
@@ -37,6 +37,7 @@ namespace ExpertSystemTest {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        public global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+
     }
 }
